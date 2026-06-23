@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>IDS Dashboard</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Realtime Network Intrusion Detection</div>
+        <h1>IDS Dashboard</h1>
+      </div>
+
+      <div class="topbar-summary">
+        <div>
+          <span>Current status</span>
+          <strong id="headerStatus">Normal Traffic</strong>
+        </div>
+        <div>
+          <span>Latest update</span>
+          <strong id="headerTime">-</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-layout">
+      <aside class="left-column">
+        <section id="networkStatusCard" class="status-card normal">
+          <div class="status-label">Network status</div>
+          <div id="networkStatusText" class="status-title">NORMAL TRAFFIC</div>
+          <div id="networkStatusDesc" class="status-desc">
+            Hệ thống đang giám sát lưu lượng mạng theo thời gian thực.
+          </div>
+        </section>
+
+        <section class="metric-grid">
+          <article class="metric-card">
+            <span>Total flows</span>
+            <strong id="totalFlows">0</strong>
+          </article>
+
+          <article class="metric-card attack">
+            <span>Attack flows</span>
+            <strong id="attackFlows">0</strong>
+          </article>
+
+          <article class="metric-card benign">
+            <span>Benign flows</span>
+            <strong id="benignFlows">0</strong>
+          </article>
+
+          <article class="metric-card">
+            <span>Top group</span>
+            <strong id="topClass" class="small">-</strong>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Latest flow</h2>
+            <p>Thông tin luồng mới nhất hệ thống nhận được</p>
+          </div>
+
+          <div id="latestFlowCard" class="latest-flow">
+            <div class="empty-state">Chưa có flow prediction nào.</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Last detected attack</h2>
+            <p>Các cuộc tấn công gần nhất</p>
+          </div>
+
+          <div id="lastAttackCard" class="latest-flow">
+            <div class="empty-state">Chưa phát hiện tấn công.</div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="center-column">
+        <section id="trafficChartPanel" class="traffic-chart-panel normal">
+          <div class="chart-header">
+            <div>
+              <h2>Realtime Traffic Trend</h2>
+              <p id="chartSubtitle">Normal traffic is being monitored continuously</p>
+            </div>
+
+            <div class="chart-metrics">
+              <div>
+                <span>Attack score</span>
+                <strong id="latestAttackScore">0.0%</strong>
+              </div>
+              <div>
+                <span>Protocol</span>
+                <strong id="latestProtocol">-</strong>
+              </div>
+              <div>
+                <span>Speed</span>
+                <strong id="latestSpeed">-</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-canvas-wrap">
+            <canvas id="trafficChart"></canvas>
+          </div>
+
+          <div class="chart-legend">
+            <div><span class="legend-dot normal"></span>Normal traffic</div>
+            <div><span class="legend-dot attack"></span>Attack traffic</div>
+          </div>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="panel-header table-header">
+            <div>
+              <h2>Latest flow predictions</h2>
+              <p>Danh sách tối đa 200 luồng mới nhất</p>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Date time</th>
+                  <th>Attack group</th>
+                  <th>Source IP</th>
+                  <th>Destination IP</th>
+                  <th>Protocol</th>
+                  <th>Packets</th>
+                  <th>Speed</th>
+                  <th>Attack score</th>
+                </tr>
+              </thead>
+
+              <tbody id="eventsTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <aside class="right-column">
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Attack group distribution</h2>
+            <p>Phân bố nhóm tấn công trong phiên hiện tại</p>
+          </div>
+
+          <div id="classBars" class="class-bars"></div>
+        </section>
+
+        <section class="panel alerts-panel">
+          <div class="panel-header">
+            <h2>Realtime alerts</h2>
+            <p>Cảnh báo mới nhất từ IDS</p>
+          </div>
+
+          <div id="alertList" class="alert-list"></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

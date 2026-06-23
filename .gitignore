@@ -1,0 +1,286 @@
+# ============================================================
+# IDS DEMO PROJECT .gitignore
+# Backend FastAPI + Python ML Runtime + Frontend Dashboard
+# ============================================================
+
+
+# ============================================================
+# 1. Python cache / bytecode
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+
+# ============================================================
+# 2. Python virtual environments
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+backend/.venv/
+backend/venv/
+frontend/.venv/
+ubuntu-agent/.venv/
+
+
+# ============================================================
+# 3. Environment variables / secrets
+# Keep .env.example for GitHub
+# ============================================================
+
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+ubuntu-agent/.env
+ubuntu-agent/.env.*
+
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+!ubuntu-agent/.env.example
+
+
+# ============================================================
+# 4. IDE / editor files
+# ============================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# 5. OS files
+# ============================================================
+
+desktop.ini
+$RECYCLE.BIN/
+
+
+# ============================================================
+# 6. Python package/build artifacts
+# ============================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+
+# ============================================================
+# 7. Jupyter / notebook checkpoints
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# 8. Logs
+# ============================================================
+
+*.log
+logs/
+backend/logs/
+frontend/logs/
+ubuntu-agent/logs/
+
+
+# ============================================================
+# 9. Runtime databases / local state
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/*.db
+
+
+# ============================================================
+# 10. Captured network data
+# Do not push packet captures or extracted experiment logs
+# ============================================================
+
+*.pcap
+*.pcapng
+*.cap
+
+pcap/
+pcaps/
+captures/
+traffic_logs/
+agent_logs/
+
+backend/pcap/
+backend/pcaps/
+backend/captures/
+
+ubuntu-agent/pcap/
+ubuntu-agent/pcaps/
+ubuntu-agent/captures/
+
+asat_agent_features_log.csv
+agent_features_*.csv
+*_features_log.csv
+*_pcap_log.csv
+
+
+# ============================================================
+# 11. ML model artifacts / checkpoints / graph bank
+# These files are large and should not be pushed to GitHub.
+# Keep only folder placeholders or README files if needed.
+# ============================================================
+
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+!backend/artifacts/README.md
+
+# If you keep nested placeholder folders, allow .gitkeep files
+!backend/artifacts/**/.gitkeep
+!backend/artifacts/**/README.md
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.index
+
+# Reports/large experiment outputs
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+backend/app/ml/checkpoints/
+backend/checkpoints/
+backend/models/checkpoints/
+
+results/
+reports/
+figures/
+runs/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+
+
+# ============================================================
+# 12. CICIoT2023 / dataset files
+# Do not push raw datasets to GitHub.
+# ============================================================
+
+data/
+dataset/
+datasets/
+CICIOT2023/
+CICIoT2023/
+CICIOT2023_KAGGLE_169CSV/
+*.csv.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+
+# ============================================================
+# 13. Frontend dependencies / build output
+# For current plain HTML/CSS/JS frontend this may not be used,
+# but keep it for future React/Vite/Vue migration.
+# ============================================================
+
+node_modules/
+frontend/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.cache/
+
+
+# ============================================================
+# 14. Local frontend config
+# Keep config.js if you intentionally want to push it.
+# Ignore local override config files.
+# ============================================================
+
+frontend/config.local.js
+frontend/config.dev.js
+frontend/config.private.js
+
+
+# ============================================================
+# 15. FastAPI / uvicorn runtime
+# ============================================================
+
+*.pid
+uvicorn.pid
+backend/uvicorn.pid
+
+
+# ============================================================
+# 16. Docker local files
+# ============================================================
+
+.docker/
+docker-compose.override.yml
+
+
+# ============================================================
+# 17. Temporary folders
+# ============================================================
+
+tmp/
+temp/
+.cache/
+backend/tmp/
+backend/temp/
+frontend/tmp/
+frontend/temp/
+
+
+# ============================================================
+# 18. Colab / Google Drive export leftovers
+# ============================================================
+
+/content/
+drive/
+MyDrive/
+*.gdoc
+*.gsheet
+*.gslides
