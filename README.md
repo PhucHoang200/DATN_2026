@@ -1124,3 +1124,15 @@ Lab traffic
 ```
 
 The system is suitable for academic research, graduation thesis work, and controlled demonstrations of how GNN-based models can be applied to network intrusion detection.
+
+## License
+
+This project is released under a custom non-commercial license. The source code and associated materials may be used for personal, educational, academic, and non-commercial research purposes only.
+
+Commercial use, redistribution, sublicensing, product integration, or paid deployment is not allowed without prior written permission from the author.
+
+For commercial permission, please contact:
+
+phucphuc2004444@gmail.com
+
+See the [LICENSE](LICENSE) file for full terms.
