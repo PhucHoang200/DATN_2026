@@ -1,21 +1,49 @@
-MIT License
+ASAT GNN IDS Non-Commercial License
 
 Copyright (c) 2026 Vo Thanh Hoang Phuc
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Contact for commercial permission: [phucphuc2004444@gmail.com](mailto:phucphuc2004444@gmail.com)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+All rights reserved.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This software project, including but not limited to source code, documentation, model-related files, configuration files, demo materials, diagrams, scripts, and other associated materials, is the intellectual property of Vo Thanh Hoang Phuc, unless otherwise stated.
+
+Permission is granted to view, download, clone, and run this project for personal, educational, academic, research, and non-commercial evaluation purposes only, subject to the conditions stated in this license.
+
+You are allowed to:
+
+1. View and study the source code.
+2. Clone or download the repository for personal learning, academic research, or thesis evaluation.
+3. Run the project in a private and controlled lab environment.
+4. Modify the project locally for non-commercial learning or research purposes.
+5. Cite or reference this project in academic work, provided that proper attribution is given to the original author.
+
+You are not allowed to do any of the following without prior written permission from the copyright holder:
+
+1. Use this project, in whole or in part, for any commercial purpose.
+2. Copy, redistribute, sublicense, sell, lease, rent, or provide this project as part of a commercial product or service.
+3. Integrate this project, its source code, model architecture, exported artifacts, dashboard, agent, backend, or any substantial portion of it into a commercial system.
+4. Use this project to provide paid consulting, paid deployment, commercial cybersecurity services, commercial IDS/IPS products, or commercial training materials.
+5. Re-upload, republish, or redistribute this project or a modified version of it as your own work.
+6. Remove, alter, or obscure the copyright notice, author information, or license terms.
+7. Use the project name, author name, or related materials in a way that implies endorsement without permission.
+
+For commercial use, redistribution, sublicensing, product integration, paid deployment, or any use beyond non-commercial academic and personal evaluation, you must contact the copyright holder and obtain prior written permission by email:
+
+[phucphuc2004444@gmail.com](mailto:phucphuc2004444@gmail.com)
+
+Any commercial use without prior written permission is strictly prohibited.
+
+If permission is granted, the permitted scope, duration, and conditions of use must be agreed upon in writing. Permission for one use case does not automatically grant permission for other use cases.
+
+Third-party libraries, frameworks, datasets, and tools used by this project remain subject to their own respective licenses. This license only applies to the original work created by Vo Thanh Hoang Phuc in this repository.
+
+The CICIoT2023 dataset, external Python packages, machine learning frameworks, and other third-party dependencies are not owned by the author of this repository. Users are responsible for complying with the licenses and terms of use of all third-party components.
+
+This project is provided for academic research and controlled lab demonstration purposes only. It must not be used to attack, disrupt, monitor, or access any system without explicit authorization.
+
+THE SOFTWARE AND ASSOCIATED MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, OR FITNESS FOR PRODUCTION USE.
+
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, LOSSES, SECURITY INCIDENTS, MISUSE, DATA LOSS, BUSINESS INTERRUPTION, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, DOCUMENTATION, MODEL ARTIFACTS, DEMO MATERIALS, OR THE USE OR OTHER DEALINGS IN THE PROJECT.
+
+By using, downloading, cloning, modifying, or referencing this project, you agree to comply with the terms of this license.
